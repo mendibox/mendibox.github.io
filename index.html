@@ -4,28 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juan Luis Mendiola</title>
+    <title>mendibox</title>
     <link rel="stylesheet" href="/style.css" />
     <link rel="icon" type="image/x-icon" href="/Images/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
   </head>
   <body>
-    <header>
-      <a href="#">Pending logo</a>
-      <!--<img class="logo" src="/Images/fire-solid.svg" alt="logo">-->
-      <div class="header-right">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <nav class="topnavbar">
+      <a href="#">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          About
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Uno</a>
+          <a href="#">Dos</a>
+          <a href="#">Tres</a>
+        </div>
       </div>
-    </header>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Projects
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Forms</a>
+          <a href="#">Components</a>
+          <a href="#">Tables</a>
+        </div>
+      </div>
+      <a href="#">Contact</a>
+    </nav>
     <main>
       <div class="welcome-message">
         <p>Welcome to my world!</p>
       </div>
     </main>
     <footer>
-      <p class="copyright">&copy 2022 by mendibox </p>
+      <p class="copyright">&copy 2022 by mendibox</p>
     </footer>
   </body>
 </html>
