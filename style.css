@@ -13,10 +13,10 @@ body {
 
 .top-navigation-bar a {
     float: left;
-    font-size: 1rem;
+    font-size: 4vw;
     color: white;
     text-align: center;
-    padding: 10px 16px;
+    padding: 10px 10px;
     text-decoration: none;
 }
 
@@ -26,11 +26,11 @@ body {
 }
 
 .dropdown .drop-button {
-    font-size: 1rem;
+    font-size: 4vw;
     border: none;
     outline: none;
     color: white;
-    padding: 10px 16px;
+    padding: 10px 10px;
     background-color: inherit;
     margin: 0;
     font-family: 'Varela Round', sans-serif;
@@ -45,7 +45,6 @@ body {
     display: none;
     position: absolute;
     background-color: #DC143C;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -53,10 +52,11 @@ body {
 .dropdown-content a {
     float: none;
     color: white;
-    padding: 12px 16px;
+    padding: 10px 5px;
     text-decoration: none;
     display: block;
     text-align: left;
+    min-width: fit-content;
 }
 
 .dropdown-content a:hover {
@@ -75,7 +75,7 @@ main {
     /*border: 1px solid black;*/
     display: flex;
     /*justify-items: flex-end;*/
-    gap: 5px;
+    gap: 5px;   
     padding: 5px;
 }
 
@@ -88,7 +88,7 @@ main {
 
 .about-info {
     border: 1px solid #DC143C;
-    font-size: 1rem;
+    font-size: 1.5vw;
     border-radius: 20px;
     padding: 5px 10px;
     margin: 0;
