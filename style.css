@@ -13,10 +13,10 @@ body {
 
 .top-navigation-bar a {
     float: left;
-    font-size: 13px;
+    font-size: 1rem;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
 }
 
@@ -26,11 +26,11 @@ body {
 }
 
 .dropdown .drop-button {
-    font-size: 13px;
+    font-size: 1rem;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 10px 16px;
     background-color: inherit;
     margin: 0;
     font-family: 'Varela Round', sans-serif;
@@ -74,7 +74,7 @@ main {
 .welcome-flex-container {
     /*border: 1px solid black;*/
     display: flex;
-    justify-items: flex-end;
+    /*justify-items: flex-end;*/
     gap: 5px;
     padding: 5px;
 }
@@ -88,9 +88,41 @@ main {
 
 .about-info {
     border: 1px solid #DC143C;
-    font-size: 10px;
+    font-size: 1rem;
     border-radius: 20px;
     padding: 5px 10px;
     margin: 0;
     box-shadow: 0 0 4px #DC143C;
+}
+
+/* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {
+}*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main {
+        background: green;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .example {
+        background: blue;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .example {
+        background: orange;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .example {
+        background: pink;
+    }
 }
