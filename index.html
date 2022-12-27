@@ -11,27 +11,29 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Tangerine"
     />
   </head>
   <body>
-    <nav class="topnavbar">
+    <nav class="top-navigation-bar">
       <a href="#">Home</a>
       <div class="dropdown">
-        <button class="dropbtn">
+        <button class="drop-button">
           About
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="#">Uno</a>
-          <a href="#">Dos</a>
-          <a href="#">Tres</a>
+          <a href="#experience">Experience</a>
+          <a href="#tech-skills">Tech skills</a>
+          <a href="#education">Education</a>
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropbtn">
+        <button class="drop-button">
           Projects
           <i class="fa fa-caret-down"></i>
         </button>
@@ -44,12 +46,17 @@
       <a href="#">Contact</a>
     </nav>
     <main>
-      <div class="welcome-message">
-        <p>Welcome to my world!</p>
+      <div class="welcome-flex-container">
+        <img
+          src="/Images/fore.png"
+          alt="Juan Luis picture"
+          id="my-picture"
+        />
+        <p class="about-info">
+          Hello there! I'm Juan Luis, a professional Frontend Web developer.<br />
+          I am living in Mexico and 
+        </p>
       </div>
     </main>
-    <footer>
-      <p class="copyright">&copy 2022 by mendibox</p>
-    </footer>
   </body>
 </html>
