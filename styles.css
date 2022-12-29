@@ -72,44 +72,62 @@ main {
     background-size: 100%;
 }
 
-/*
-.welcome-flex-container {
-    border: 1px solid black;
-    display: flex;
-    justify-items: flex-end;
-    gap: 5px;   
-    padding: 5px;
-}
-*/
 #my-picture {
-    /*border: 1px solid #DC143C;*/
-    width: 100vw;
-    /*border-radius: 60px;*/
-    /*box-shadow: 0 0 4px #DC143C;*/
+    width: 100%;
+    padding: 10px;
 }
 
 .about-info {
-    border: 1px solid #DC143C;
     font-size: 1rem;
     border-radius: 20px;
     padding: 5px 10px;
-    margin: 0;
+    margin: 10px;
     box-shadow: 0 0 4px #DC143C;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-    .top-navigation-bar,
-    .top-navigation-bar a,
-    .dropdown .drop-button {
-        background-color: #6f1792;
-    }
-
-    #my-picture {
-        width: 30vw;
-    }
+footer {
+    background-color: #DC143C;
+    margin-top: 1vh;
+    padding: 5px;
 }
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.agent {
+    color: black;
+}
+.copyright {
+    font-size: 0.48rem;
+    text-align: center;
+}
+
+.contact-icon {
+    text-align: right;
+}
+
+.contact-icon a:link {
+    color: black;
+}
+
+.contact-icon a:active {
+    color: black;
+}
+
+.contact-icon a:visited {
+    color: black;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
