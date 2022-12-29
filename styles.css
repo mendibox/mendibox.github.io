@@ -90,23 +90,20 @@ main {
 
 .about-info {
     border: 1px solid #DC143C;
-    font-size: 1.5vw;
+    font-size: 1rem;
     border-radius: 20px;
     padding: 5px 10px;
     margin: 0;
     box-shadow: 0 0 4px #DC143C;
 }
 
-/* Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {
-}*/
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
+    .top-navigation-bar,
     .top-navigation-bar a,
     .dropdown .drop-button {
-        font-size: 1.5rem;
+        background-color: #6f1792;
     }
 
     #my-picture {
@@ -115,19 +112,10 @@ main {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .example {
-        background: orange;
-    }
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .example {
-        background: pink;
-    }
-}
+@media only screen and (min-width: 1200px) {}
