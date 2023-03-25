@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mendibox</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="icon" type="image/x-icon" href="/Images/favicon.svg" />
+    <title>Juan Luis Mendiola</title>
+    <link rel="icon" href="./Images/favicon.svg" type="svg+xml" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Glory:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <script
@@ -18,61 +18,193 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <nav class="top-navigation-bar" id="my-top-nav">
-      <a href="https://www.freecodecamp.org/" target="_blank" class="active">Home</a>
-      <a href="#">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa-solid fa-ellipsis"></i>
-      </a>
-    </nav>
+  <body class="main-content">
+    <header class="section section1 active" id="home">
+      <div class="section-content">
+        <div class="first-item">
+          <h1 class="name">
+            Hello there! I'm <span>Juan Luis</span>, a junior Frontend web
+            developer.
+          </h1>
+          <p>
+            Looking to develop my professional career as a software engineer.
+            Interested in being part of companies of global scope that allow a
+            professional and personal development in human and competitive
+            environment. <br />Self-taught, life-long learner and always happy
+            to talk about science and technology.
+          </p>
+        </div>
+        <div class="second-item">
+          <div class="section-shape"></div>
+          <div class="image">
+            <img src="./Images/myPicture.png" alt="Juan Luis picture" />
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <img
-        src="/Images/mypicture.png"
-        alt="Juan Luis picture"
-        id="my-picture"
-      />
-      <p class="about-info">
-        Hello there! I'm Juan Luis, a professional Frontend Web developer.
-      </p>
+      <section class="section sec2" id="about">
+        <div class="main-title">
+          <h2>About <span>me</span><span class="bg-text">About me</span></h2>
+        </div>
+        <div class="about-container">
+          <div class="left-about">
+            <h4>A little story</h4>
+            <p>
+              In 2016, I was forced to close my own business (a drugstore) due
+              to security reasons. After a tough period of time, I decided to
+              take my life back and move forward. I really believe the best
+              option to accomplish my goals is by learning and contribute to the
+              amazing and awesome development industry.
+            </p>
+            <div class="btn-con">
+              <a
+                href="https://docs.google.com/document/d/14LwUEfuoM70DHFAnvJaCUR1gGMfE65Fc/edit?usp=share_link&ouid=103482915219120221154&rtpof=true&sd=true"
+                target="_blank"
+                class="main-btn"
+              >
+                <span class="btn-text">Resume </span>
+                <span class="btn-icon"
+                  ><i class="fa-regular fa-circle-down"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+          <div class="right-about">
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">5+</p>
+                <p class="small-text">Projects <br />completed</p>
+              </div>
+            </div>
+            <a href="https://wakatime.com/@mendibox" target="_blank">
+              <div class="about-item">
+                <div class="abt-text">
+                  <p class="large-text">171+</p>
+                  <p class="small-text">Hours <br />coding</p>
+                </div>
+              </div>
+            </a>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">52+</p>
+                <p class="small-text">Books <br />read</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="abt-text">
+                <p class="large-text">422+</p>
+                <p class="small-text">Cups <br />of coffee</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-skills">
+          <h4 class="about-subtitles">My tech skills</h4>
+          <div class="skills-container">
+            <div class="side-container">
+              <p class="title">Front-end</p>
+              <div class="side-icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-sass"></i>
+              </div>
+            </div>
+            <div class="side-container">
+              <p class="title">Back-end</p>
+              <div class="side-icons">
+                <i class="fa-solid fa-database"></i>
+                <i class="fa-brands fa-java"></i>
+              </div>
+            </div>
+            <div class="side-container">
+              <p class="title">Version control</p>
+              <div class="side-icons">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="about-subtitles" id="example">My work experience</h4>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <img src="./images/microsoft.png" alt="Microsoft logo" />
+            </div>
+            <p class="tl-duration">01.2021 - 07.2022</p>
+            <h5>
+              Public switched telephone network engineer <span>Microsoft</span>
+            </h5>
+            <ul>
+              <li>
+                Assistance to companies located in USA and CA for migration of
+                telephone lines into Microsoft Teams platform.
+              </li>
+              <li>
+                Attention and monitoring of requests for new telephone numbers.
+              </li>
+              <li>Basic troubleshooting for telephone lines out of service.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <img src="./images/compucom.png" alt="Compucom logo" />
+            </div>
+            <p class="tl-duration">09.2019 - 01.2021</p>
+            <h5>Service desk representative <span>Compucom</span></h5>
+            <p>
+              Technical assistance for software and hardware through phone
+              calls, chats, and emails.
+            </p>
+            <p>Installation and set up of new point of sales.</p>
+            <p>Local area network configuration and troubleshooting.</p>
+            <p>
+              Troubleshooting for receipt printers, label printers and regular
+              printer.
+            </p>
+            <p>
+              Creation, modification and deletion of knowledge base articles.
+            </p>
+            <p>Training for new team members.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <img src="./images/farmapronto.jpg" alt="Farmapronto logo" />
+            </div>
+            <p class="tl-duration">05.2011 - 12.2018</p>
+            <h5>Owner <span>Farmapronto</span></h5>
+            <p>
+              Installation, configuration and maintenance of point of sales.
+            </p>
+            <p>
+              Installation, configuration and maintenance of local area network.
+            </p>
+            <p>Personnel training for software and hardware.</p>
+            <p>Monthly profit and loss statements creation.</p>
+            <p>Inventories</p>
+            <p>Implementation of strategies to improve profit.</p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="row">
-      <div class="column agent">
-        <i class="fa-solid fa-user-secret"></i>
+    <div class="theme-btn">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </div>
+    <div class="controls">
+      <div class="control active-btn" data-id="home">
+        <i class="fa-solid fa-house"></i>
       </div>
-      <div class="column copyright">
-        <p>&copy; 2022 Juan Luis Mendiola.</p>
+      <div class="control" data-id="about">
+        <i class="fa-solid fa-user"></i>
       </div>
-      <div class="column contact-icon">
-        <a href="https://t.me/mendibox" target="_blank"
-          ><i class="fa-brands fa-telegram"></i
-        ></a>
-        <a href="https://twitter.com/mendibox" target="_blank"
-          ><i class="fa-brands fa-square-twitter"></i
-        ></a>
-        <a href="mailto:mendibox@gmail.com"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/mendibox/" target="_blank"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/mendibox" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
+      <div class="control" data-id="portfolio">
+        <i class="fa-solid fa-briefcase"></i>
       </div>
-    </footer>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("my-top-nav");
-        if (x.className === "top-navigation-bar") {
-          x.className += " responsive";
-        } else {
-          x.className = "top-navigation-bar";
-        }
-      }
-    </script>
+      <div class="control" data-id="contact">
+        <i class="fa-solid fa-envelope-open"></i>
+      </div>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
