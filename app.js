@@ -34,10 +34,10 @@ function pageTransitions() {
   });
 
   //Toggle theme
-  const themeBtn = document.querySelector(".theme-btn");
+  const themeBtn = document.querySelector(".dark-theme");
   themeBtn.addEventListener("click", () => {
     let element = document.body;
-    element.classList.toggle("light-mode");
+    element.classList.toggle("dark-theme");
   });
 }
 

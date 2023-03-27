@@ -36,14 +36,24 @@ $box-shadow-1: 0 7px 7px #2a2e35;
 }
 
 body {
+  //background-color: $color-primary;
   font-family: "Glory", sans-serif;
   font-size: 1.1rem;
   color: $color-grey-4;
   transition: $elements-effect;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
 header {
+  //min-height: 100vh;
   height: 100vh;
+  //color: $color-primary;
   overflow: hidden;
 }
 
@@ -51,25 +61,26 @@ header {
   transform: translateY(-100%) scale(0);
   transition: $elements-effect;
   //background-color: $color-grey-5;
+  padding: 1rem;
 }
 
-.section1 {
+.section-1 {
   display: none;
   transform: translateY(0) scale(1);
 }
-.section2 {
+.section-2 {
   display: none;
   transform: translateY(0) scale(1);
 }
-.section3 {
+.section-3 {
   display: none;
   transform: translateY(0) scale(1);
 }
-.section4 {
+.section-4 {
   display: none;
   transform: translateY(0) scale(1);
 }
-.section5 {
+.section-5 {
   display: none;
   transform: translateY(0) scale(1);
 }
@@ -88,11 +99,11 @@ header {
 }
 
 section {
+  //min-height: 100vh;
   width: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
 }
 
 /*Toggle theme*/
@@ -101,6 +112,11 @@ section {
   left: 0.5rem;
   cursor: pointer;
   position: fixed;
+  /*
+  transition: all 0.1s ease-in-out;
+  &:active {
+    transform: translateY(-6px);
+  }*/
   i {
     font-size: 1.6rem;
     color: $color-grey-2;
@@ -114,12 +130,14 @@ section {
   width: 100vw;
   position: fixed;
   z-index: 10;
+  //top: 50%;
+  //right: 3%;
   bottom: 0;
   display: flex;
+  //flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #6c7983;
-  //flex-direction: column;
   //transform: translateY(-50%);
   .active-btn {
     //border: 1px solid red;
@@ -139,8 +157,8 @@ section {
     height: 55px;
     border-radius: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: 1rem 0.5rem;
     box-shadow: $box-shadow-1;
   }
@@ -156,13 +174,14 @@ section {
 .section-content {
   display: grid;
   grid-template-columns: 1fr;
-  //height: 100vh;
+  //min-height: 100vh;
   .first-item {
     //border: 1px solid red;
     //display: flex;
     //flex-direction: column;
     //justify-content: center;
-    padding: 0 1rem;
+    //padding-right: 18rem;
+    //padding: 0 1rem;
     .name {
       //border: 1px solid red;
       font-size: 2rem;
@@ -194,9 +213,219 @@ section {
       transition: $elements-effect;
       img {
         width: 100%;
+        //height: 100%;
         object-fit: cover;
         transition: $elements-effect;
+        /*filter: grayscale(100%);
+        &:hover {
+          filter: grayscale(0);
+        }*/
       }
     }
   }
+}
+
+/*About section*/
+.about-container {
+  //border: 1px solid red;
+  //display: grid;
+  //grid-template-columns: 1fr;
+  //padding-top: 1rem;
+  //padding-bottom: 1rem;
+  .first-about {
+    //border: 1px solid red;
+    //display: grid;
+    //grid-template-columns: 1fr;
+    //gap: 2rem;
+    a {
+      width: 100%;
+    }
+    .about-item {
+      //border: 1px solid red;
+      border: 1px solid $color-grey-5;
+      border-radius: 9px;
+      transition: $elements-effect;
+      box-shadow: $box-shadow-1;
+      //text-align: center;
+      margin-bottom: 1.5rem;
+      //width: 100%;
+      //height: 1rem;
+      /*
+      &:hover {
+        cursor: default;
+        transform: translateY(-5px);
+        border: 1px solid var(--color-secondary);
+        box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+      }
+      */
+      .abt-text {
+        padding: 1.5rem;
+        //display: flex;
+        //flex-direction: column;
+        .large-text {
+          font-size: 3rem;
+          font-weight: 700;
+          color: $color-secondary;
+        }
+        .small-text {
+          padding-left: 7rem;
+          //position: relative;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          color: $color-grey-4;
+          /*
+          letter-spacing: 2px;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 15px;
+            width: 2rem;
+            height: 2px;
+            background-color: var(--color-grey-5);
+          }
+          */
+        }
+      }
+    }
+  }
+  .second-about {
+    //padding-right: 5rem;
+    /*
+    h4 {
+      //font-size: 2rem;
+      //text-transform: uppercase;
+    }
+    */
+    p {
+      line-height: 2rem;
+      padding: 1rem;
+      color: $color-grey-4;
+      text-indent: 1.5rem;
+      text-align: justify;
+    }
+  }
+}
+
+/*My tech skills*/
+.about-skills {
+  //padding-bottom: 4rem;
+  .skills-container {
+    //display: grid;
+    //grid-template-columns: repeat(2, 1fr);
+    //gap: 2rem;
+    .side-container {
+      .title {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        text-align: center;
+        font-weight: 500;
+        //padding: 1rem;
+      }
+      .side-icons {
+        font-size: 3rem;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 0 1.5rem 0;
+      }
+    }
+  }
+}
+
+.about-subtitles {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 61px;
+    width: 80%;
+    height: 1px;
+    background-color: $color-grey-4;
+    transform: translateX(-50%);
+  }
+}
+
+/*Independent elements*/
+/*Sections main title*/
+.main-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    span {
+      color: $color-secondary;
+    }
+    .bg-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: $color-grey-2;
+      transition: all 0.4s ease-in-out;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      font-weight: 800;
+      font-size: 2rem;
+    }
+  }
+}
+
+/*Resume download button*/
+.btn-con {
+  //border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  //align-self: flex-start;
+}
+
+.resume-btn {
+  border-radius: 30px;
+  color: inherit;
+  font-weight: 600;
+  //position: relative;
+  border: 1px solid $color-secondary;
+  //display: flex;
+  //align-self: flex-start;
+  display: flex;
+  align-items: center;
+  //overflow: hidden;
+  .btn-text {
+    padding: 0 3rem;
+  }
+  .btn-icon {
+    background-color: $color-secondary;
+    display: flex;
+    //align-items: center;
+   //justify-content: center;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+  /*
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.4s ease-out;
+    z-index: -1;
+  }
+  
+  &:hover {
+    &::before {
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-secondary);
+      transform: translateX(0);
+      transition: all 0.4s ease-out;
+    }
+  }
+  */
 }
