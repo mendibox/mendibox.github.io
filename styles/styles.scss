@@ -6,41 +6,47 @@
 }
 
 /*Global variables for light theme*/
-$color-primary: #fff;
-$color-secondary: rgb(52, 37, 255);
-$color-hover: rgba(52, 37, 255, 0.8);
-$color-grey-0: #f8f8f8;
-$color-grey-1: #dbe1e8;
-$color-grey-2: #b2becd;
-$color-grey-3: #6c7983;
-$color-grey-4: #454e56;
-$color-grey-5: #2a2e35;
-$color-grey-6: #12181b;
-$elements-effect: all 0.4s ease-in-out;
-$box-shadow-1: 0 7px 7px #2a2e35;
+:root {
+  --color-primary: #fff;
+  --color-secondary: rgb(52, 37, 255);
+  --color-hover: rgba(52, 37, 255, 0.8);
+  --color-light: #fff;
+  --color-dark: #000;
+  --color-grey-0: #f8f8f8;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
+  --color-grey-6: #12181b;
+  --elements-effect: all 0.4s ease-in-out;
+  --box-shadow-1: 0 3px 15px rgba(255, 255, 255, 0.3);
+}
 
 /*Global variables for dark theme*/
 .dark-theme {
-  $color-primary: #191d2b;
-  $color-secondary: rgb(39, 174, 96);
-  $color-hover: rgba(39, 174, 96, 0.8);
-  $color-grey-0: #f8f8f8;
-  $color-grey-1: #dbe1e8;
-  $color-grey-2: #b2becd;
-  $color-grey-3: #6c7983;
-  $color-grey-4: #454e56;
-  $color-grey-5: #2a2e35;
-  $color-grey-6: #12181b;
-  $elements-effect: all 0.4s ease-in-out;
-  $box-shadow-1: 0 3px 15px rgba(255, 255, 255, 0.3);
+  --color-primary: #191d2b;
+  --color-secondary: #27ae60;
+  --color-hover: rgba(39, 174, 96, 0.8);
+  --color-light: #000;
+  --color-dark: #fff;
+  --color-grey-0: #12181b;
+  --color-grey-1: #2a2e35;
+  --color-grey-2: #454e56;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #b2becd;
+  --color-grey-5: #dbe1e8;
+  --color-grey-6: #f8f8f8;
+  --elements-effect: all 0.4s ease-in-out;
+  --box-shadow-1: 0 3px 15px rgba(255, 255, 255, 0.3);
 }
 
 body {
-  //background-color: $color-primary;
+  background-color: var(--color-primary);
   font-family: "Glory", sans-serif;
   font-size: 1.1rem;
-  color: $color-grey-4;
-  transition: $elements-effect;
+  color: var(--color-grey-4);
+  transition: --elements-effect;
 }
 
 a {
@@ -53,14 +59,14 @@ a {
 header {
   //min-height: 100vh;
   height: 100vh;
-  //color: $color-primary;
+  //color: --color-primary;
   overflow: hidden;
 }
 
 .section {
   transform: translateY(-100%) scale(0);
-  transition: $elements-effect;
-  //background-color: $color-grey-5;
+  transition: --elements-effect;
+  //background-color: --color-grey-5;
   padding: 1rem;
 }
 
@@ -119,7 +125,7 @@ section {
   }*/
   i {
     font-size: 1.6rem;
-    color: $color-grey-2;
+    color: --color-grey-2;
     pointer-events: none;
   }
 }
@@ -133,7 +139,7 @@ section {
   //top: 50%;
   //right: 3%;
   bottom: 0;
-  display: flex;
+  display: none;
   //flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -141,8 +147,8 @@ section {
   //transform: translateY(-50%);
   .active-btn {
     //border: 1px solid red;
-    background-color: $color-secondary !important;
-    transition: $elements-effect;
+    background-color: --color-secondary !important;
+    transition: --elements-effect;
     i {
       //border: 1px solid red;
       color: white;
@@ -152,7 +158,7 @@ section {
     //border: 1px solid red;
     padding: 1rem;
     cursor: pointer;
-    background-color: $color-grey-4;
+    background-color: --color-grey-4;
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -160,12 +166,12 @@ section {
     justify-content: center;
     align-items: center;
     margin: 1rem 0.5rem;
-    box-shadow: $box-shadow-1;
+    box-shadow: --box-shadow-1;
   }
   i {
     //border: 1px solid red;
     font-size: 1.2rem;
-    color: $color-grey-2;
+    color: --color-grey-2;
     pointer-events: none;
   }
 }
@@ -187,7 +193,7 @@ section {
       font-size: 2rem;
       margin-top: 2.5rem;
       span {
-        color: $color-secondary;
+        color: --color-secondary;
       }
     }
     p {
@@ -210,12 +216,12 @@ section {
       width: 68%;
       margin-left: 4rem;
       background-color: black;
-      transition: $elements-effect;
+      transition: --elements-effect;
       img {
         width: 100%;
         //height: 100%;
         object-fit: cover;
-        transition: $elements-effect;
+        transition: --elements-effect;
         /*filter: grayscale(100%);
         &:hover {
           filter: grayscale(0);
@@ -242,10 +248,10 @@ section {
     }
     .about-item {
       //border: 1px solid red;
-      border: 1px solid $color-grey-5;
+      border: 1px solid --color-grey-5;
       border-radius: 9px;
-      transition: $elements-effect;
-      box-shadow: $box-shadow-1;
+      transition: --elements-effect;
+      box-shadow: --box-shadow-1;
       //text-align: center;
       margin-bottom: 1.5rem;
       //width: 100%;
@@ -265,14 +271,14 @@ section {
         .large-text {
           font-size: 3rem;
           font-weight: 700;
-          color: $color-secondary;
+          color: --color-secondary;
         }
         .small-text {
           padding-left: 7rem;
           //position: relative;
           text-transform: uppercase;
           font-size: 1.2rem;
-          color: $color-grey-4;
+          color: --color-grey-4;
           /*
           letter-spacing: 2px;
           &::before {
@@ -300,7 +306,7 @@ section {
     p {
       line-height: 2rem;
       padding: 1rem;
-      color: $color-grey-4;
+      color: --color-grey-4;
       text-indent: 1.5rem;
       text-align: justify;
     }
@@ -332,6 +338,57 @@ section {
   }
 }
 
+/*My work experience*/
+.work-timeline {
+  //border: 1px solid red;
+  //padding-bottom: 3rem;
+  .timeline-item {
+    //border: 1px solid red;
+    position: relative;
+    padding-left: 3.5rem;
+    padding-bottom: 1.2rem;
+    /*border-left: 2px solid var(--color-grey-5);*/
+    .tl-icon {
+      position: absolute;
+      left: 0.3px;
+      top: 0px;
+      /*background-color: var(--color-white);*/
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 55px;
+        border-radius: 50%;
+      }
+    }
+    .tl-duration {
+      padding: 0.2rem 0.6rem;
+      background-color: var(--color-grey-6);
+      border-radius: 15px;
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+    h5 {
+      padding: 0.3rem 0;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      font-weight: 600;
+      span {
+        color: var(--color-grey-2);
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+    }
+    p {
+      color: var(--color-grey-2);
+    }
+  }
+}
+
 .about-subtitles {
   text-transform: uppercase;
   font-size: 1.8rem;
@@ -345,7 +402,7 @@ section {
     top: 61px;
     width: 80%;
     height: 1px;
-    background-color: $color-grey-4;
+    background-color: --color-grey-4;
     transform: translateX(-50%);
   }
 }
@@ -361,13 +418,13 @@ section {
     font-size: 1rem;
     font-weight: 700;
     span {
-      color: $color-secondary;
+      color: --color-secondary;
     }
     .bg-text {
       position: absolute;
       top: 50%;
       left: 50%;
-      color: $color-grey-2;
+      color: --color-grey-2;
       transition: all 0.4s ease-in-out;
       z-index: -1;
       transform: translate(-50%, -50%);
@@ -390,7 +447,7 @@ section {
   color: inherit;
   font-weight: 600;
   //position: relative;
-  border: 1px solid $color-secondary;
+  border: 1px solid --color-secondary;
   //display: flex;
   //align-self: flex-start;
   display: flex;
@@ -400,10 +457,10 @@ section {
     padding: 0 3rem;
   }
   .btn-icon {
-    background-color: $color-secondary;
+    background-color: --color-secondary;
     display: flex;
     //align-items: center;
-   //justify-content: center;
+    //justify-content: center;
     border-radius: 50%;
     padding: 1rem;
   }
