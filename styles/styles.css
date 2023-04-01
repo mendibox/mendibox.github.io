@@ -416,9 +416,9 @@ section {
   justify-content: center;
   margin-top: -0.3rem;
   margin-bottom: 1rem;
-  background-color: var(--color-grey-3);
+  background-color: var(--color-secondary);
   border-radius: 0 0 15px 15px;
-  border-top: 4px solid var(--color-secondary);
+  border-top: 4px solid var(--color-grey-3);
 }
 .portfolios .portfolio-item .hover-items .icons .icon {
   background-color: var(--color-primary);
@@ -441,6 +441,52 @@ section {
   transform: scale(1);
 }
 */
+/*Contact section*/
+/*.contact-container {
+  border: 1px solid red;
+}*/
+.contact-content-con .items-container h4 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px dotted var(--color-secondary);
+}
+.contact-content-con .items-container .contact-item {
+  display: inline-flex;
+  margin: 1rem;
+}
+.contact-content-con .items-container .contact-item .item-icon {
+  /*
+  .signal-icon {
+    width: 100%;
+  }
+  a {
+    //border: 1px solid red;
+    display: none;
+    margin: 0.3rem 1rem !important;
+    padding: 0 !important;
+    font-size: 1.2rem;
+
+    &:hover {
+      border: 2px dotted var(--color-secondary);
+    }
+
+  }
+  p {
+    //border: 1px solid red;
+    display: none;
+    margin: 0.3rem 1rem !important;
+    padding: 0 !important;
+    font-size: 1.2rem;
+  }*/
+}
+.contact-content-con .items-container .contact-item .item-icon i {
+  font-size: 18vw;
+}
+.contact-content-con .items-container .contact-item .item-text {
+  display: none;
+}
+
 /*Independent elements*/
 /*Sections main title*/
 .main-title {
