@@ -57,7 +57,6 @@ a {
 }
 
 header {
-  height: 100vh;
   overflow: hidden;
 }
 
@@ -65,6 +64,7 @@ header {
   transform: translateY(-100%) scale(0);
   transition: --elements-effect;
   padding: 1rem;
+  margin-top: 4.4rem;
 }
 
 .section-1 {
@@ -114,10 +114,11 @@ section {
 
 /*Toggle theme*/
 .theme-btn {
-  top: 0.5rem;
-  left: 0.5rem;
+  top: 5rem;
+  left: 0.2rem;
   cursor: pointer;
   position: fixed;
+  z-index: 2;
   /*
   transition: all 0.1s ease-in-out;
   &:active {
@@ -126,7 +127,7 @@ section {
 }
 .theme-btn i {
   font-size: 1.6rem;
-  color: var(--color-grey-2);
+  color: var(--color-grey-5);
   pointer-events: none;
 }
 
@@ -134,8 +135,8 @@ section {
 .controls {
   width: 100vw;
   position: fixed;
-  z-index: 10;
-  bottom: 0;
+  z-index: 1;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,8 +153,8 @@ section {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-grey-4);
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -173,8 +174,8 @@ section {
   grid-template-columns: 1fr;
 }
 .section-content .first-item .name {
+  text-indent: 1.5rem;
   font-size: 2rem;
-  margin-top: 2.5rem;
 }
 .section-content .first-item .name span {
   color: var(--color-secondary);
@@ -497,7 +498,7 @@ section {
   position: relative;
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 .main-title h2 span {
   color: var(--color-secondary);
@@ -506,12 +507,12 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: var(--color-grey-2);
+  color: var(--color-grey-1);
   transition: all 0.4s ease-in-out;
   z-index: -1;
   transform: translate(-50%, -50%);
-  font-weight: 800;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 1.41rem;
 }
 
 /*Resume download button*/
@@ -557,4 +558,15 @@ section {
   display: flex;
   border-radius: 50%;
   padding: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .controls {
+    background-color: unset;
+    width: unset;
+    top: 50%;
+    right: 3%;
+    flex-direction: column;
+    transform: translateY(-50%);
+  }
 }/*# sourceMappingURL=styles.css.map */
