@@ -229,15 +229,20 @@ section {
   */
 }
 .about-container .first-about .about-item .abt-text {
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0.75rem 1.5rem;
+  display: flex;
 }
 .about-container .first-about .about-item .abt-text .large-text {
   font-size: 3rem;
   font-weight: 700;
   color: var(--color-secondary);
+  padding-right: 1rem;
+  border-right: 2px double var(--color-secondary);
 }
 .about-container .first-about .about-item .abt-text .small-text {
-  padding-left: 7rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
   font-size: 1.2rem;
   color: var(--color-grey-4);
@@ -454,13 +459,12 @@ section {
 }
 .contact-content-con .items-container .contact-item {
   display: inline-flex;
-  margin: 1rem;
 }
 .contact-content-con .items-container .contact-item .item-icon {
+  border: 1px solid greenyellow;
+  width: 25vw;
+  height: 25vw;
   /*
-  .signal-icon {
-    width: 100%;
-  }
   a {
     //border: 1px solid red;
     display: none;
@@ -483,6 +487,9 @@ section {
 }
 .contact-content-con .items-container .contact-item .item-icon i {
   font-size: 18vw;
+}
+.contact-content-con .items-container .contact-item .item-icon .signal-icon {
+  width: 18vw;
 }
 .contact-content-con .items-container .contact-item .item-text {
   display: none;
