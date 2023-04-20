@@ -3,7 +3,6 @@
 [my personal website]: #
 
 - Media queries
-  1.  Home section
   2.  About section
   3.  Portfolio section
   4.  Contact section
@@ -26,8 +25,6 @@ Of course, you are always free to clone and replicate this site.
 ## Technologies and tools used to develop this project
 
 ### HTML
-
-![This is just a test](./Images/developer.png "HTML icon")
 
 ### CSS
 
