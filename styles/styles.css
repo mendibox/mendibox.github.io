@@ -1,1 +1,11 @@
-/*# sourceMappingURL=styles.css.map */
+body {
+  margin: 0;
+}
+
+.main-menu {
+  border: 1px solid red;
+}
+.main-menu a {
+  text-decoration: none;
+  font-size: 1rem;
+}/*# sourceMappingURL=styles.css.map */
