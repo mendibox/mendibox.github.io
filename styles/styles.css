@@ -1,11 +1,14 @@
 body {
   margin: 0;
-  background-color: rgb(26, 23, 23);
+  background-color: #1B1B1B;
+  font-family: Glory, sans-serif;
 }
 
 .main-menu {
+  height: 4rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
   background-color: rgb(231, 229, 75);
@@ -13,7 +16,7 @@ body {
 }
 .main-menu a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .main-menu span {
   text-decoration: underline;
