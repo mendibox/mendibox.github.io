@@ -1,11 +1,26 @@
 body {
   margin: 0;
+  background-color: rgb(26, 23, 23);
 }
 
 .main-menu {
-  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  box-shadow: 1px 50px 80px rgb(231, 229, 75);
 }
 .main-menu a {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.4rem;
+}
+
+.section-hello img {
+  width: 50px;
+  background-color: black;
+  border-radius: 0.4rem;
+}
+.section-hello h1 {
+  display: inline;
+  color: red;
 }/*# sourceMappingURL=styles.css.map */

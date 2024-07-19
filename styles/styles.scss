@@ -1,13 +1,33 @@
-:root {
+body {
+  margin: 0;
+  background-color: rgb(26, 23, 23);
 }
 
-body {
-    margin: 0;
+header {
+  //Pending
 }
+
 .main-menu {
-    border: 1px solid red;
-    a{
-        text-decoration: none;
-        font-size: 1rem;
-    }
+  display: flex;
+  justify-content: center;
+  column-gap: 0.5rem;
+  box-shadow: 1px 50px 80px rgb(231, 229, 75);
+  a {
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+}
+
+.section-hello {
+  //display: flex;
+
+  img {
+    width: 50px;
+    background-color: black;
+    border-radius: 0.4rem;
+  }
+  h1{
+    display: inline;
+    color: red;
+  }
 }
